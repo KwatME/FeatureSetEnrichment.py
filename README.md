@@ -2,14 +2,12 @@ Module for set enrichment analysis.
 
 ## Install
 
-Must install (this) sea, julia, and some julia packages.
+Must install (this) FeatureSetEnrichment.py, julia, and some julia packages.
 
 ### sea
 
 ```sh
-git clone https://github.com/KwatME/sea
-
-pip install --editable sea/
+pip install git+https://github.com/KwatME/FeatureSetEnrichment.py
 ```
 
 ### julia
@@ -27,7 +25,7 @@ julia
 ```julia
 using Pkg: add
 
-add(url="https://github.com/KwatME/SEA.jl")
+add(url="https://github.com/KwatME/FeatureSetEnrichment.jl")
 
 add("PyCall")
 
@@ -40,4 +38,4 @@ add("Pandas")
 
 See [examples](notebook/example.ipynb).
 
-#### Check out the [julia interface](https://github.com/KwatME/SEA.jl) and the [GSEA application](https://github.com/KwatME/gsea).
+### Check out the [julia interface](https://github.com/KwatME/FeatureSetEnrichment.jl) and the [GSEA application](https://github.com/KwatME/GSEA.app).
