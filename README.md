@@ -1,4 +1,4 @@
-Module for set enrichment analysis.
+For set enrichment analysis.
 
 ## Install
 
@@ -38,4 +38,4 @@ add("Pandas")
 
 See [examples](notebook/example.ipynb).
 
-### Check out the [julia interface](https://github.com/KwatME/FeatureSetEnrichment.jl) and the [GSEA application](https://github.com/KwatME/GSEA.app).
+### Check out the [julia interface](https://github.com/KwatME/FeatureSetEnrichment.jl) and the [GSEA application](https://github.com/KwatME/GSEA.js).
