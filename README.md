@@ -2,9 +2,7 @@ For set enrichment analysis.
 
 ## Install
 
-Must install (this) FeatureSetEnrichment.py, julia, and some julia packages.
-
-### sea
+### FeatureSetEnrichment.py (this)
 
 ```sh
 pip install git+https://github.com/KwatME/FeatureSetEnrichment.py
