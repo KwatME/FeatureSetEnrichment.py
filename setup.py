@@ -1,14 +1,14 @@
 from setuptools import setup
 
-name = "featuresetenrichment"
+n = "featuresetenrichment"
 
 setup(
-    name=name,
+    name=n,
     version="0.1.0",
     python_requires=">=3.6",
     install_requires=(
         "julia",
         "pandas",
     ),
-    packages=(name,),
+    packages=(n,),
 )

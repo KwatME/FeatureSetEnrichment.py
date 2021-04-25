@@ -4,7 +4,8 @@ def score_n_sample_n_set(element_x_sample, set_to_element_, n_job=1):
 
     Main.n_job = n_job
 
-    set_x_sample = Main.eval("""
+    set_x_sample = Main.eval(
+        """
     Pandas.DataFrame(score_set(
         element_x_sample,
         set_to_element_;

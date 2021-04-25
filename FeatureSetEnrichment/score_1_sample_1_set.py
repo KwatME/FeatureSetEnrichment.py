@@ -1,12 +1,13 @@
 def score_1_sample_1_set(element_score_, set_element_, sort=True, plot=True):
 
-    send(element_score_, None, set_element_,  None)
+    send(element_score_, None, set_element_, None)
 
     Main.sort = sort
 
     Main.plot = plot
 
-    result = Main.eval("""
+    result = Main.eval(
+        """
     score_set(
         element_,
         score_,
@@ -14,6 +15,7 @@ def score_1_sample_1_set(element_score_, set_element_, sort=True, plot=True):
         sort = sort,
         plot = plot,
     )
-    """)
+    """
+    )
 
     return result

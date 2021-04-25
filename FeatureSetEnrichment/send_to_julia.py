@@ -10,9 +10,11 @@ def send_to_julia(element_score_, element_x_sample, set_element, set_to_element_
 
         Main.element_x_sample = element_x_sample
 
-        Main.eval("""
+        Main.eval(
+            """
         element_x_sample = DataFrames.DataFrame(Pandas.DataFrame(element_x_sample))
-        """)
+        """
+        )
 
     if set_element_ is not None:
 
@@ -22,6 +24,8 @@ def send_to_julia(element_score_, element_x_sample, set_element, set_to_element_
 
         Main.set_to_element_ = set_to_element_
 
-        Main.eval("""
+        Main.eval(
+            """
         set_to_element_ = convert(Dict{String, Vector{String}}, set_to_element_)
-        """)
+        """
+        )
