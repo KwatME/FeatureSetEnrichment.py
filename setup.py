@@ -1,6 +1,6 @@
 from setuptools import setup
 
-name = "FeatureSetEnrichment"
+name = "featuresetenrichment"
 
 setup(
     name=name,
