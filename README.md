@@ -5,31 +5,33 @@ For set enrichment analysis.
 ### FeatureSetEnrichment.py (this)
 
 ```sh
-pip install git+https://github.com/KwatME/FeatureSetEnrichment.py
+git clone https://github.com/KwatME/FeatureSetEnrichment.py
 ```
 
-### julia
+### Julia 1.5.4
 
-```sh
-brew install julia
-```
-
-### julia packages
+### Julia packages
 
 ```sh
 julia
 ```
 
 ```julia
-using Pkg: add
+using Pkg: add, develop, build
 
-add(url="https://github.com/KwatME/FeatureSetEnrichment.jl")
+for name in (
+    "IJulia",
+    "DataFrames",
+    "Pandas",
+)
 
-add("PyCall")
+    add(name)
 
-add("DataFrames")
+end
 
-add("Pandas")
+develop(; path="$(homedir())/code/jl/FeatureSetEnrichment.jl/")
+
+build("IJulia")
 ```
 
 ## Use
