@@ -1,16 +1,22 @@
-For set enrichment analysis.
-
 ## Install
 
 ### FeatureSetEnrichment.py (this)
 
 ```sh
-git clone https://github.com/KwatME/FeatureSetEnrichment.py
+python3 -m pip install git+https://github.com/KwatME/FeatureSetEnrichment.py
 ```
 
-### Julia 1.5.4
+### Julia 1.5.4 (PyCall and pyjulia are not compatible with 1.6 yet)
 
 ### Julia packages
+
+```sh
+cd ~/code/jl/ &&
+
+git clone https://github.com/KwatME/FeatureSetEnrichment.jl &&
+
+git clone https://github.com/KwatME/GCTGMT.jl
+```
 
 ```sh
 julia
@@ -25,11 +31,18 @@ for name in (
     "Pandas",
 )
 
-    add(name)
+    add(; name=name)
 
 end
 
-develop(; path="$(homedir())/code/jl/FeatureSetEnrichment.jl/")
+for path in (
+    "$(homedir())/code/jl/FeatureSetEnrichment.jl/",
+    "$(homedir())/code/jl/GCTGMT.jl/",
+)
+
+    develop(; path=path)
+
+end
 
 build("IJulia")
 ```
@@ -38,4 +51,6 @@ build("IJulia")
 
 See [examples](notebook/example.ipynb).
 
-### Check out the [julia interface](https://github.com/KwatME/FeatureSetEnrichment.jl) and the [GSEA application](https://github.com/KwatME/GSEA.js).
+---
+
+Check out the [julia version](https://github.com/KwatME/FeatureSetEnrichment.jl) and the [desktop application](https://github.com/KwatME/GSEA.web).
