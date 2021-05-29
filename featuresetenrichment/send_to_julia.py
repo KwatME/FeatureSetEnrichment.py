@@ -1,4 +1,9 @@
-def send_to_julia(element_score_, element_x_sample, set_element, set_to_element_):
+def send_to_julia(
+    element_score_,
+    element_x_sample,
+    set_element,
+    set_to_element_,
+):
 
     if element_score_ is not None:
 
